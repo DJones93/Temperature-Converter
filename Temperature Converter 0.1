@@ -5,15 +5,24 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-    final byte temperatureAddition = 32;
-    final float temperatureMultiplication = (float)1.8;
+        final byte temperatureAddition = 32;
+        final float temperatureMultiplication = (float) 1.8;
 
-        System.out.print("Enter a degree in Celsius: ");
-        Scanner scanner = new Scanner(System.in);
-        byte celsius = scanner.nextByte();
+        System.out.print("Enter a degree in Celsius: ");{
+            Scanner scanner = new Scanner(System.in);
+            byte celsiusTemperature = scanner.nextByte();
 
-        int fahrenheit = (int)(celsius * temperatureMultiplication) + temperatureAddition;
+            int trueFahrenheitTemp = (int) (celsiusTemperature * temperatureMultiplication) + temperatureAddition;
+            System.out.print("Your Temperature in Fahrenheit is: " + trueFahrenheitTemp);
+            System.out.println("");
+        }
 
-        System.out.print("Your Temperature in Fahrenheit is: " + fahrenheit);
+        System.out.print("Enter a degree in Fahrenheit: ");{
+            Scanner scanner = new Scanner((System.in));
+            byte fahrenheitTemperature = scanner.nextByte();
+
+            float trueCelsiusTemperature = (fahrenheitTemperature - temperatureAddition) / temperatureMultiplication;
+            System.out.println("Your Temperature in Celsius is: " + trueCelsiusTemperature);
+        }
     }
 }
