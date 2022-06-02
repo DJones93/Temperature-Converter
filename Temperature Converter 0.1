@@ -9,13 +9,13 @@ public class Main {
         final float temperatureMultiplication = (float) 1.8;
 
             Scanner scanner = new Scanner(System.in);
-            
+
             System.out.print("Enter a degree in Celsius: ");
             byte celsiusTemperature = scanner.nextByte();
             int trueFahrenheitTemp = (int) (celsiusTemperature * temperatureMultiplication) + temperatureAddition;
             System.out.print("Your Temperature in Fahrenheit is: " + trueFahrenheitTemp);
-            
-            System.out.print(" ");
+
+            System.out.println(" ");
             System.out.print("Enter a degree in Fahrenheit: ");
             byte fahrenheitTemperature = scanner.nextByte();
             float trueCelsiusTemperature = (fahrenheitTemperature - temperatureAddition) / temperatureMultiplication;
