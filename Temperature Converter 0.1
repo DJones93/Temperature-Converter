@@ -8,21 +8,17 @@ public class Main {
         final byte temperatureAddition = 32;
         final float temperatureMultiplication = (float) 1.8;
 
-        System.out.print("Enter a degree in Celsius: ");{
             Scanner scanner = new Scanner(System.in);
+            
+            System.out.print("Enter a degree in Celsius: ");
             byte celsiusTemperature = scanner.nextByte();
-
             int trueFahrenheitTemp = (int) (celsiusTemperature * temperatureMultiplication) + temperatureAddition;
             System.out.print("Your Temperature in Fahrenheit is: " + trueFahrenheitTemp);
-            System.out.println("");
-        }
-
-        System.out.print("Enter a degree in Fahrenheit: ");{
-            Scanner scanner = new Scanner((System.in));
+            
+            System.out.print(" ");
+            System.out.print("Enter a degree in Fahrenheit: ");
             byte fahrenheitTemperature = scanner.nextByte();
-
             float trueCelsiusTemperature = (fahrenheitTemperature - temperatureAddition) / temperatureMultiplication;
             System.out.println("Your Temperature in Celsius is: " + trueCelsiusTemperature);
-        }
     }
 }
